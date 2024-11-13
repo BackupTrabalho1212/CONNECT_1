@@ -1,0 +1,306 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    min-height: 100vh; /* Garante que o body preencha toda a altura da tela */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+}
+
+/* Estilos do header */
+header {
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre logo e navegação */
+    align-items: center; /* Alinhamento vertical */
+    background-color: #00aaff; /* Cor sólida */
+    padding: 15px 30px; /* Espaçamento interno */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    position: relative; /* Para o efeito de pseudo-elemento */
+}
+
+/* Estilo da navegação em colunas */
+nav {
+    display: flex;
+    gap: 60px; /* Espaçamento entre os itens */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilo das colunas de navegação */
+.nav-column {
+    display: flex;
+    flex-direction: column; /* Coloca os links em coluna */
+}
+
+.nav-column a {
+    color: #f3f3f3; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 18px; /* Tamanho da fonte */
+    padding: 5px 10px; /* Espaçamento interno */
+    transition: color 0.3s ease; /* Transições suaves para a cor */
+}
+
+.nav-column a:hover {
+    color: #fff; /* Cor do texto ao passar o mouse */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Efeito de brilho ao passar o mouse */
+}
+
+.logo {
+    margin-right: auto; /* Garante que a logo fique à esquerda */
+}
+
+.logo img {
+    max-width: 150px; /* Largura máxima da logo */
+    height: auto; /* Mantém a proporção */
+}
+
+/* Estilo do botão "Logout" */
+.logout-btn {
+    background-color: #ff6347; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 10px 25px; /* Espaçamento interno */
+    border: none; /* Remove borda padrão */
+    border-radius: 30px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+    display: inline-block; /* Permite a aplicação de padding e border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra do botão */
+}
+
+.logout-btn:hover {
+    background-color: #ff4500; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento de tamanho ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumento da sombra ao passar o mouse */
+}
+
+/* Área do aluno */
+.student-area {
+    flex: 1;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.student-area h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.student-area p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Feedback Cards */
+.feedback-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feedback-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #00aaff;
+}
+
+.feedback-card h3 {
+    font-size: 20px;
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+.feedback-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+.feedback-card p strong {
+    color: #666;
+}
+
+/* Estilos do Footer */
+.footer {
+    background-color: #010041; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    padding: 10px 20px; /* Diminuir o padding para um rodapé mais fino */
+    font-size: 14px; /* Tamanho da fonte do rodapé */
+    margin-top: auto; /* Garante que o footer fique na parte inferior */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Espaçar as seções do footer */
+    flex-wrap: wrap; /* Permitir que as seções se movam para baixo em telas menores */
+}
+
+.footer-section {
+    width: 30%; /* Largura das seções do footer */
+    margin-bottom: 10px; /* Espaço inferior entre as seções */
+}
+
+.footer-section h3 {
+    margin-bottom: 5px; /* Espaço abaixo do título */
+    font-size: 16px; /* Tamanho da fonte do título */
+    color: #00aaff; /* Cor azul para o título */
+}
+
+.footer-section ul {
+    list-style-type: none; /* Remover marcadores da lista */
+    padding: 0; /* Remover padding da lista */
+}
+
+.footer-section ul li {
+    margin: 2px 0; /* Margem entre os itens da lista */
+}
+
+.footer-section ul li a {
+    color: #ffffff; /* Cor dos links */
+    text-decoration: none; /* Remover sublinhado dos links */
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Estilos da seção de redes sociais */
+.footer-section.social-media {
+    color: #fff; /* Cor branca para o texto */
+}
+
+.footer-section.social-media h3 {
+    color: #00aaff; /* Cor azul para o título */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section.social-media .line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6347;; /* Linha azul */
+    margin-bottom: 15px;
+}
+
+.footer-section.social-media .social-icon {
+    display: flex;
+    align-items: center;
+    color: #fff; /* Cor branca para os links */
+    text-decoration: none;
+    font-size: 1.1em;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-section.social-media .social-icon i {
+    color: #ff6347;; /* Ícones em azul */
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+.footer-section.social-media .social-icon:hover {
+    color: #ff6347;; /* Muda para azul ao passar o mouse */
+}
+
+
+/*Estilizar Redes sociais*/
+
+.footer-section.social-media {
+    color: #fff; /* Cor branca para o texto */
+}
+
+.footer-section.social-media h3 {
+    color: #ff6347; /* Cor laranja para o título */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section.social-media .line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6347; /* Linha laranja */
+    margin-bottom: 15px;
+}
+
+.footer-section.social-media .social-icon {
+    display: flex;
+    align-items: center;
+    color: #fff; /* Cor branca para os links */
+    text-decoration: none;
+    font-size: 1.1em;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+    width: 50px;
+}
+
+.footer-section.social-media .social-icon i {
+    color: #ff6347; /* Ícones em laranja */
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+.footer-section.social-media .social-icon:hover {
+    color: #ff6347; /* Muda para laranja ao passar o mouse */
+}
+
+/*Fim de stilizar Redes sociais*/
+
+
+
+.footer-bottom {
+    text-align: center; /* Centralizar o texto inferior */
+    margin-top: 5px; /* Espaço acima do texto inferior */
+    font-size: 12px; /* Tamanho da fonte do texto inferior */
+}
+
+.footer .line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6347; /* Linha laranja */
+    margin-bottom: 15px;
+    border-radius: 50px;
+}
+
+.footer-section.social-media {
+    color: #fff; /* Cor branca para o texto */
+}
+
+.footer-section h3 {
+    color: #ff6347; /* Cor laranja para o título */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/*SCROLL TO TOP*/
+/* Estilo do botão de voltar ao topo */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00aaff; /* Cor do botão */
+    color: white; /* Cor do texto */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    display: none; /* Inicialmente escondido */
+    z-index: 1000; /* Para garantir que fique sobre outros elementos */
+    transition: background-color 0.3s ease; /* Efeito de transição */
+}
+
+.scroll-to-top:hover {
+    background-color: #0099cc; /* Cor de fundo ao passar o mouse */
+}
